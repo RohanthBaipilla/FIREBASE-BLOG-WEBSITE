@@ -1,0 +1,84 @@
+/* src/components/Blogs/Home.css */
+
+.bhome-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bblog-card {
+    display: flex;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bblog-image {
+    width: 200px; /* Fixed width for image */
+    height: 150px; /* Fixed height for image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 5px; /* Rounded corners for the image */
+    margin-right: 15px; /* Space between the image and text */
+}
+
+.bblog-details {
+    flex: 1; /* Takes the remaining space */
+    display: flex;
+    flex-direction: column; /* Arrange text vertically */
+}
+
+.bblog-title {
+    margin: 0;
+    font-size: 1.5em; /* Title font size */
+    color: #333; /* Title color */
+}
+
+.bblog-excerpt {
+    flex: 1; /* Allow the excerpt to grow */
+    margin: 10px 0; /* Space above and below the excerpt */
+    font-size: 1em; /* Font size for the excerpt */
+    color: #555; /* Color for the excerpt */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+    display: -webkit-box; /* Allows the use of -webkit-box */
+    -webkit-box-orient: vertical; /* Vertical box orientation */
+    -webkit-line-clamp: 3; /* Clamps the text to 3 lines */
+}
+
+.bblog-author,
+.bblog-timestamp {
+    margin: 5px 0; /* Space between the author and timestamp */
+    font-size: 0.9em; /* Font size for author and timestamp */
+    color: #777; /* Color for author and timestamp */
+}
+
+.bloading {
+    text-align: center;
+    font-size: 1.5em; /* Loading font size */
+}
+
+.bno-blogs-message {
+    text-align: center; /* Center text for no blogs message */
+    font-size: 1.2em; /* Font size for no blogs message */
+    color: #888; /* Color for no blogs message */
+}
+
+.bloading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for centering */
+  }
+  .bloading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for centering */
+  }
+    

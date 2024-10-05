@@ -1,0 +1,89 @@
+.navbar {
+    background-color: #3a3f42; /* Darker shade for the navbar */
+    padding: 1rem 2rem; /* Add padding for a better look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    display: flex;
+    justify-content: space-between; /* Space between title and nav items */
+    align-items: center; /* Vertically center the items */
+}
+
+.navbar:hover {
+    background-color: #4a4f52; /* Darker shade on hover */
+}
+
+.navbarTitle {
+    font-size: 1.5rem; /* Slightly larger for visibility */
+    color: #ffffff; /* White title color */
+    margin-right: auto; /* Push title to the left */
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    position: relative; /* For hover effects */
+    margin-left: 20px; /* Space between items */
+}
+
+.navLink {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly smaller font size */
+    padding: 10px 15px; /* Add padding for better touch targets */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+.navLink:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    color: #ffcc00; /* Gold color on hover */
+}
+
+.signOutButton {
+    color: #fff;
+    background-color: #ff4757; /* Bright red for sign out */
+    border: none;
+    padding: 10px 20px; /* Consistent padding */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem; /* Slightly smaller font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.signOutButton:hover {
+    background-color: #e84118; /* Darker red on hover */
+}
+
+@media (max-width: 768px) {
+    .navList {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .navbar {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .navbarTitle {
+        margin-bottom: 1rem; /* Add space below the title */
+        font-size: 1.3rem; /* Slightly smaller title on mobile */
+    }
+
+    .navItem {
+        margin-left: 0; /* Reset margin */
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    .signOutButton {
+        width: 100%; /* Full-width sign-out button */
+        text-align: center;
+    }
+}
+

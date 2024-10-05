@@ -1,0 +1,37 @@
+/* ViewBlog.css */
+.view-blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-blog-image {
+    width: 100%; /* Take full width of the container */
+    max-height: 400px; /* Set a maximum height for the image */
+    object-fit: cover; /* Cover the area without distorting aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .view-blog-title {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .view-blog-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .view-blog-author,
+  .view-blog-timestamp {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 10px;
+  }
+  
